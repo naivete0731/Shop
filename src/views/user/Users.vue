@@ -316,7 +316,7 @@ export default {
       const confirmResult = await this.$confirm('此操作将永久删除该用户, 是否继续?', '删除用户', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
-        typoe: 'warning'
+        type: 'warning'
       }).catch(err => err)
 
       // 如果用户确认删除, 则返回值为字符串 confirm

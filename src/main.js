@@ -6,8 +6,10 @@ import 'element-ui'
 import '@/assets/css/global.css'
 import '../plugins/element'
 import 'element-ui/lib/theme-chalk/index.css'
+// 导入字体图标
 import '@/assets/fonts/iconfont.css'
 
+import TreeTable from 'vue-table-with-tree-grid'
 import axios from 'axios'
 import request from '@/utils/request'
 
@@ -19,3 +21,6 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
+Vue.component('tree-table', TreeTable)
+// Vue.use(TreeTable)
