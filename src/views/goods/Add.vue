@@ -13,7 +13,7 @@
       <el-alert title="添加商品信息" type="info" center show-icon :closable="false">
       </el-alert>
       <!-- 步骤条区域 -->
-      <el-steps :space="200" :active="activeIndex - 0" finish-status="success" align-center>
+      <el-steps align-center :space="200" :active="activeIndex - 0" finish-status="success" >
         <el-step title="基本信息"></el-step>
         <el-step title="商品参数"></el-step>
         <el-step title="商品属性"></el-step>
@@ -269,6 +269,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+  .el-steps {
+    justify-content: center;
+  }
 .el-checkbox {
     margin: 0 10px 0 0 !important;
   }
